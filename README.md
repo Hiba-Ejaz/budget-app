@@ -1,32 +1,29 @@
-# Getting Started with React Components & React Hooks
+This is a financial management app built using React. It allows the user to add income, expenses, savings, and set a target saving amount. The app calculates the remaining balance after taking into account the added income, expenses, and savings.
 
-This assignment requires also TypeScript when passing props to React Components
 
-## Requirements
+Development
+This app was built using React and uses hooks such as useState and useEffect. The app has several components, including IncomeDisplay, ExpenseDisplay, AddDetails, AddExpenseDetails, CalculateBalance, AddSavingAccount, and AddTarget. The App component uses these components to render the UI and manage the state of the app.
 
-1. Create a simple one-page application to store incomes and expenses, and set
-saving target.
-2. Account balance can be calculated from incomes, expenses, and saving.
-`incomes - expenses - saving = balance`
-3. Users should be able to add new incomes, expenses, transfer from balance account to saving account, and reset saving target. Balance should never be negative number.
-4. Use React Hooks where applicable. TypeScript must be used at least for the props types.
-5. Style is not the priority in this assignment.
+Features
+Add income details
+Add expense details
+Add saving amount details
+Set a saving target amount
+View income and expense details
+View the remaining balance
+View the total amount saved
 
-## Bonus point
+How to Use
+Add income details by filling in the income source, amount, and date fields, then click "Add".
+Add expense details by filling in the expense source, amount, and date fields, then click "Add". It first checks if the expense amount is less than or equal to the current balance. If it is, it adds the expense to the expense data array using the setExpenseData function. If not, it displays an alert saying "not enough balance" and does not add the expense to the array. 
+Add savings amount by filling in the saving amount and date fields, then click "Add Savings".
+Set a saving target amount by entering the amount in the "Set Target" field and clicking "SET TARGET"
+The code checks if the saving target is reached before allowing you to make more savings. If the total amount of savings exceeds the target or if the saving amount you want to add exceeds the target, it will display an alert message and prevent you from adding more savings. .
+View income and expense details in the "IncomeAndExpenses" section.
+View the remaining balance in the "Balance Left" section.
+View the total amount saved in the "Amount saved" section.
 
-1. Add function to transfer money back from saving account to current balance.
-2. Set source of incomes and expenses as the select elements with the categories of your choice.
-3. Add edit/delete button and according functions for incomes and expenses.
-4. Use `d3` package to print out 2 piecharts for incomes and expenses in categories (I only give bonus point when you use `d3`, not the other handier libraries).
+### `npm test`
 
-## References
-
-Be creative with your style!
-
-![demo1](demo1.png)
----
-
-![demo2](demo2.png)
----
-
-![demo3](demo3.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.

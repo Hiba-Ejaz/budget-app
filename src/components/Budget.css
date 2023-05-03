@@ -1,0 +1,36 @@
+.budget{
+    border:1px solid grey;
+   padding:2rem;
+   font-size: 1rem;
+   color:#333;
+   height:5rem;
+   text-align: center;
+   border-radius: 0.5rem;
+   background-color: rgb(240, 238, 236);
+}
+.high{
+background-color: black;
+}
+.medium{
+background-color:rgb(63, 60, 60)
+}
+
+.low{
+background-color: grey;
+}
+.default{
+   background-color: cornsilk;
+}
+.displayForIncome{
+   border:1px solid grey;
+   padding:2rem;
+   font-size: 1rem;
+   color:#333;
+   height:5rem;
+   text-align: center;
+   border-radius: 0.5rem;
+   background-color: rgb(240, 238, 236);
+   display: flex;
+   width:50%;
+   float:left;
+}
