@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './AddDetail.css';
-import { incomeType,expenseType } from "../components/types";
+import { incomeType } from "../components/types";
 
 type addDetail={
      addDetail:(d: incomeType) => void
