@@ -3,6 +3,7 @@ import { savingAmountType } from './types';
 
 type addSavingAmountData={
       addSavingAmountData: (s: savingAmountType) => void
+      DeductSavingAmountData:(s: savingAmountType) => void
 }
 function AddSavingAccount(prop:addSavingAmountData) {
     const [savingAmount,setSavingAmount]=useState<number>(0);
@@ -19,7 +20,7 @@ function AddSavingAccount(prop:addSavingAmountData) {
     const handleClickeSendBackFromSavingAmount=(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
       console.log("hello");
       e.preventDefault();
-     // prop.DeductSavingAmountData({savingAmount});
+       prop.DeductSavingAmountData({savingAmount});
      }
   return (
     <div>

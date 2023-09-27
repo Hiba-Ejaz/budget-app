@@ -25,5 +25,4 @@ View the total amount saved in the "Amount saved" section.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+link to the deployed site [https://hiba-ejaz.github.io/fs15_7-budget-app/]

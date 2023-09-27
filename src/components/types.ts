@@ -13,5 +13,6 @@ export type targetType={
 }
 export type savingAmountType={
     savingAmount:number
+    sendingBackAmount:number
     }
 
